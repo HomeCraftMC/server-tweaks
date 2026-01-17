@@ -1,7 +1,0 @@
-name: ServerTweaks
-version: 1.0.0
-main: pl.psalkowski.servertweaks.ServerTweaksPlugin
-api-version: '1.21'
-description: Modular server utilities and tweaks for Paper servers
-authors:
-  - psalkowski
