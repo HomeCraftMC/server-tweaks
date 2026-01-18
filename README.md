@@ -41,11 +41,14 @@ spawn-on-join:
   pitch: 0          # Player rotation (vertical)
 ```
 
-## Technical Details
+## Compatibility
 
-- **Minecraft Version**: 1.21+
-- **Server Software**: Paper (or Paper forks)
-- **Java Version**: 21+
+| Plugin Version | Minecraft | Paper | Java |
+|----------------|-----------|-------|------|
+| 1.1.x          | 1.21.11   | 1.21  | 21+  |
+| 1.0.x          | 1.21.11   | 1.21  | 21+  |
+
+**Server Software**: Paper or Paper-based forks (Purpur, Pufferfish, etc.)
 
 ## Building from Source
 
