@@ -31,6 +31,7 @@ steps:
     commands:
       - mc alias set minio https://s3.psalkowski.pl "$S3_ACCESS_KEY" "$S3_SECRET_KEY"
       - export VERSION=$(cat .version) && mc cp target/ServerTweaks-$VERSION.jar minio/minecraft-plugins/server-tweaks/ServerTweaks-$VERSION.jar && echo "Uploaded ServerTweaks-$VERSION.jar"
+      - mc cp target/ServerTweaks-$(cat .version).jar minio/minecraft-plugins/server-tweaks/ServerTweaks-SNAPSHOT.jar && echo "Uploaded ServerTweaks-SNAPSHOT.jar"
 
   check-changelog:
     image: alpine:latest
