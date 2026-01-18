@@ -21,7 +21,9 @@ Teleports players to configured coordinates when they join the server. Useful fo
 ### Download
 
 - **Latest Release**: https://s3.psalkowski.pl/minecraft-plugins/server-tweaks/ServerTweaks.jar
-- **Snapshot (dev)**: https://s3.psalkowski.pl/minecraft-plugins/server-tweaks/ServerTweaks-X.Y.Z-SNAPSHOT.jar
+- **Snapshot (dev)**: https://s3.psalkowski.pl/minecraft-plugins/server-tweaks/ServerTweaks-SNAPSHOT.jar
+- **GitHub Releases**: https://github.com/HomeCraftMC/server-tweaks/releases
+- **Modrinth**: https://modrinth.com/plugin/server-tweaks
 
 ### Steps
 
@@ -65,8 +67,12 @@ Output: `target/ServerTweaks-<version>.jar`
 ## CI/CD
 
 Builds are automated via Woodpecker CI:
-- **Push to main**: Builds and uploads `ServerTweaks-X.Y.Z-SNAPSHOT.jar`
-- **Tag `vX.Y.Z`**: Builds release, uploads `ServerTweaks.jar` (latest) and `ServerTweaks-X.Y.Z.jar` (versioned), then bumps version
+- **Push to main**: Builds and uploads `ServerTweaks-SNAPSHOT.jar` to S3
+- **Tag `vX.Y.Z`**: Builds release and:
+  - Uploads to S3: `ServerTweaks.jar` (latest) + `ServerTweaks-X.Y.Z.jar`
+  - Creates GitHub Release with JAR attached
+  - Publishes to Modrinth
+  - Bumps version to next SNAPSHOT
 
 ## License
 
