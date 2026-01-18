@@ -1,3 +1,7 @@
+<p align="center">
+  <img src=".github/logo.jpeg" alt="ServerTweaks" width="128">
+</p>
+
 # ServerTweaks
 
 A modular Paper plugin providing server utilities and tweaks for Minecraft servers.
